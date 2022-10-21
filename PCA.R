@@ -1,8 +1,8 @@
 ### Script for PCA
-### Adapted from 
 ### Customized by mperdomo 2022   
 
 ### upload necessary libraries
+### you must first download each package using the function install.packages()
 library(ggbiplot)
 library(tidyverse)
 library(FactoMineR)
@@ -116,8 +116,6 @@ head(TAALES.pca$x)
 
 ### Choose the number of components to retain based on the eigenvalue
 ncomp <- 10 #change the number here
-
-sqrt(1/ncol(TAALES_clean)) # cutoff for 'important' loadings
 
 ### Extract the factor rotation
 ### Rotation transforms the original factors into new ones that are easier to interpret
