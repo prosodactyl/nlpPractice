@@ -1,8 +1,14 @@
 ### Script for PCA
-### Customized by mperdomo 2022   
+### Customized by mperdomo 2022 for Vandy LATTE Fall 2022
+
+### you must first download each package using the function install.packages()
+library(devtools)
+install_github("vqv/ggbiplot")
+install.pacakages(tidyverse)
+install.pacakages(FactoMineR)
+install.pacakages(factoextra)
 
 ### upload necessary libraries
-### you must first download each package using the function install.packages()
 library(ggbiplot)
 library(tidyverse)
 library(FactoMineR)
@@ -16,7 +22,7 @@ today.date = "10212022"
 
 ### set the working directory
 ### this is the folder in which your source files can be found
-setwd("/Users/perdomm/Desktop/PCA Practice/texts")
+setwd("/Users/YOURCOMPUTERUSERNAME/Desktop/PCA Practice/texts")
 TAALES <- read.csv("TAALES.csv")
 Groups <- read.csv("groups.csv")
 
